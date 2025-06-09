@@ -1,6 +1,5 @@
 /* Base styles */
 @import 'base/variables.css';
-@import 'base/reset.css';
 @import 'base/typography.css';
 
 /* Layout components */
@@ -9,10 +8,9 @@
 
 /* UI components */
 @import 'components/button.css';
-@import 'components/card.css';
+@import 'components/cards.css';
 @import 'components/navigation.css';
-@import 'components/form.css';
-@import 'components/modal.css';
+/* @import 'components/form.css'; */
 
 /* Page-specific styles (minimal) */
 @import 'pages/home.css';
