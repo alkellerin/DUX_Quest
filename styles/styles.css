@@ -1,0 +1,23 @@
+/* Base styles */
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/typography.css';
+
+/* Layout components */
+@import 'layouts/container.css';
+@import 'layouts/grid.css';
+
+/* UI components */
+@import 'components/button.css';
+@import 'components/card.css';
+@import 'components/navigation.css';
+@import 'components/form.css';
+@import 'components/modal.css';
+
+/* Page-specific styles (minimal) */
+@import 'pages/home.css';
+@import 'pages/contact.css';
+
+/* Utilities */
+@import 'utilities/spacing.css';
+@import 'utilities/text.css';
