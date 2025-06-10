@@ -136,7 +136,7 @@
   
   .active {
     i.fas {
-      color: $color-blue;
+      color: var(--blue);
       transform: translateX(-50%) rotate(180deg);
     }
   
