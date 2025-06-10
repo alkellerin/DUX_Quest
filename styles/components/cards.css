@@ -1,0 +1,92 @@
+.cardArticle {
+    width: 296px;
+    border: 2px solid var(--lighter-gray);
+    border-radius: 8px;
+    background-color: white;
+}
+
+.cardArticle:hover {
+    /* filter: drop-shadow(4px 8px 10px #8C8C8C); */
+}
+
+.thumbnail_cover {
+    background-color: var(--blue);
+    border-radius: 8px 8px 0px 0px;
+    height: 158px;
+    border: none;
+}
+
+.thumbnail_img {
+    float: right;
+    width: 50%;
+}
+
+.cardInfo {
+   padding: 16px;
+}
+
+.link-action {
+    padding: 4px 16px;
+}
+
+/* ------------------------------------- */
+.cardFaculty {
+    width: 296px;
+    border: 2px solid var(--lighter-gray);
+    border-radius: 8px;
+    background-color: white;
+}
+.thumbnail_img2 {
+    background-color: var(--blue);
+    border-radius: 8px 8px 0px 0px;
+    height: 296px;
+    border: none;
+}
+
+.roleLabel {
+    padding: 16px 16px 0px 16px;
+}
+
+/* ------------------------------------- */
+.choices {
+    display: flex;
+    gap: 24px;
+}
+
+.employer-card-icon {
+    font-size: 48px;
+}
+
+.member-card-icon {
+    font-size: 48px;
+}
+
+.membersCard {
+    width: 18.5rem;
+    height: 19rem;
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+    color: var(--blue);
+    background-color: var(--yellow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membersCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.employersCard {
+    width: 18.5rem;
+    height: 19rem;
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+    color: white;
+    background-color: #398434;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.employersCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}

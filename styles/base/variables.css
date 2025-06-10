@@ -49,23 +49,6 @@ body {
     --lightest-red: #F3BABC;
 }
 
-/* FONT WEIGHTS --------------------------------------------------------*/
-.regular {
-    font-weight: 400;
-}
-
-.medium {
-    font-weight: 500;
-}
-
-.demi {
-    font-weight: 600;
-}
-
-.bold {
-    font-weight: 700;
-}
-
 /* SIZING ------------------------------------------------------------------- */
 .size12 {
     font-size: 12px;

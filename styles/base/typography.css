@@ -7,11 +7,19 @@
     margin: 0px;
 }
 
-.label, .link {
+.link {
     font-family: "greycliff-cf", sans-serif;
     font-style: normal;
     font-size: 14px;
     margin: 0px;
+}
+
+.labeltag {
+    font-family: "greycliff-cf", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    margin: 0px;
+    color: var(--light-gray);
 }
 
 .link-action {
@@ -88,3 +96,20 @@
     margin: 0px;
 }
 
+
+/* FONT WEIGHTS --------------------------------------------------------*/
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.demi {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}

@@ -7,7 +7,7 @@
     border-radius: 8px;
     text-decoration: none;
     color: var(--white);
-    background-color: var(--blue);
+    background-color: var(--blue) ;
 }
 
     .button-primary-med:hover {
@@ -112,6 +112,7 @@
 
     .button-link-med:hover {
         font-weight: 700;
+        color: var(--blue);
     }
 
     .button-link-med:disabled {
@@ -233,6 +234,7 @@
 
     .button-link-sm:hover {
         font-weight: 700;
+        color: var(--blue);
     }
 
     .button-link-sm:disabled {
@@ -353,6 +355,7 @@
 
     .button-link-lg:hover {
         font-weight: 700;
+        color: var(--blue);
     }
 
     .button-link-lg:disabled {

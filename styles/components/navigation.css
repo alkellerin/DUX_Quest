@@ -1,0 +1,136 @@
+.top-nav {
+    padding: 1.563rem 2.188rem;
+    display: flex; 
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.nav-logo {
+    display: flex;
+    gap: 1.25rem;
+    height: 3.125rem;
+    align-items: center;
+}
+
+.nav-icon {
+    height: 3.125rem;
+}
+
+.navbar-links {
+    align-items: center;
+    display: flex; 
+    gap: 1.25rem;
+}
+
+.navbar-links p:hover {
+    color: var(--light-gray);
+}
+
+/* Search Container --------------------------------------------------------------------------*/
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 0;
+    opacity: 0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: var(--background-color2);
+}
+
+.search-input.active {
+    width: 250px;
+    opacity: 1;
+    margin-right: 8px;
+}
+
+.search-icon {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-icon:hover {
+    background-color: var(--background-color2);
+}
+
+.search-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: #666;
+    transition: stroke 0.2s ease;
+}
+
+.close-icon {
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.close-icon.active {
+    display: flex;
+}
+
+.close-icon:hover {
+    background-color: #f0f0f0;
+}
+
+.close-icon svg {
+    width: 16px;
+    height: 16px;
+    stroke: #666;
+}
+
+.login-btn {
+    background-color: var(--yellow);
+    color: #333;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.login-btn:hover {
+    background-color: #FFC107;
+}
+
+.search-active .header {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 1440px) {
+    .brand-name {
+        display: none;
+    }
+    
+}
