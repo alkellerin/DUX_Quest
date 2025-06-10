@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
 
         <script src="https://unpkg.com/htmlincludejs"></script>
-        <script src="../js/scripts.js"></script>
     </head>
 
     <body>
@@ -73,6 +72,8 @@
             </div>
         </div>
 
+        const faqQuestions = document.querySelectorAll(".faq-question");
+
         <div class="faq-container row">
           <div class="faq-title">
             <h3><b>Frequently Asked Questions</b></h3>
@@ -81,7 +82,7 @@
             <div class="faq-item">
               <h6 class="faq-question">
                 <b>Question</b>
-                <i class="fas fa-chevron-down"></i>
+                <i class="ph ph-caret-down icon24"></i>
               </h6>
               <div class="faq-answer">
                 <p>
@@ -94,7 +95,8 @@
         
 
 
-        <script src="../js/scripts.js" async defer></script>
+        <script type="module" src="../js/components/cards.js"></script>
+
         
     </body>
 
