@@ -1,17 +1,42 @@
-input {
-    padding: 16px;
-    border: 2px solid var(--light-gray);
+input[type=text]{
+    border: 1px solid var(--light-gray);
     border-radius: 8px;
     background-color: white;
     width: 624px;
 }
 
-input {
-    margin-top: 0.5rem;
+input[type=button]{
+    border-radius: 8px;
+    border: none;
 }
-  
+
+input[type=radio]{
+    color: var(--blue);
+}
+
 input::placeholder {
     color: var(--light-gray);
+    width: 624px;
+}
+
+.form-label {
+    margin: 8px;
+}
+
+/* Feedback from input */
+.success-field{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--green);
+    background-color: white;
+    width: 624px;
+}
+
+.error-field{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--red);
+    background-color: white;
     width: 624px;
 }
 
@@ -25,3 +50,65 @@ input::placeholder {
     gap: 0.5em;
 }
 
+/* CHECKBOX FORM ---------------------------------------------------------------------------------------- */
+.option-container {
+    padding: 16px 8px;
+    color: black;
+    display: inline-flex;
+    margin: auto;
+}
+
+/* DROPDOWN ---------------------------------------------------------------------------------------- */
+
+.dropbtn {
+    background-color: var(--white);
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+    color: var(--black);
+    padding: 16px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    width: 296px;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: var(--white);
+    border-radius: 8px;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 16px;
+    width: 296px;
+    border-radius: 8px;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: block;
+}
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #CED2F3;
+    font-style: bold;
+}
+  
+.show {
+    display:block;
+}

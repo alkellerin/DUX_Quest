@@ -12,27 +12,28 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
 
         <script src="https://unpkg.com/htmlincludejs"></script>
-        <script src="../js/scripts.js"></script>
     </head>
 
     <body>
         <!-- TEXT FORM -->
-        <div class="input-div">
-            <form action="" method="post">
-                <label for="">Label</label> </br>
-                <input type="text" id="" name="" class="text-field" placeholder="placeholder"> </br>
-                <input type="button" onclick="" value="Submit" class="button-primary">
-            </form>
+        <form action="" method="post">
+            <label for="" class="form-label">Label</label>
+            <input type="text" id="" name="" class="text-field" placeholder="Placeholder"> 
+            <input type="button" onclick="" value="Submit" class="button-primary-med">
+        </form>
 
-            <div class="input-div">
-                <input type="text" id="" name="" class="success-field" placeholder="placeholder"> </br>
-                <span style="color:var(--green)"><p class="link-action">Success Message Here</p></span>
+        <div class="input-div">
+            <div id="" name="" class="success-field">
+                <p class="body-base">Answer is here</p>
             </div>
-    
-            <div class="input-div">
-                <input type="text" id="" name="" class="error-field" placeholder="placeholder"> </br>
-                <span style="color:var(--red)"><p class="link-action">Error Message Here</p></span>
+            <span style="color:var(--green)"><p class="link-action">Success Message Here</p></span>
+        </div>
+
+        <div class="input-div">
+            <div id="" name="" class="error-field drop-shadow-light">
+                <p class="body-base">Answer is here</p>
             </div>
+            <span style="color:var(--red)"><p class="link-action">Error Message Here</p></span>
         </div>
 
         <!-- RADIO -->
@@ -48,14 +49,36 @@
             </label>
         </div>
 
+        <!-- CHECKBOX FORM -->
+        <!-- <p class="subtitle-scale-1">Checkbox Label</p>
+
+        <label class="checkbox-item">
+            <input type="checkbox" class="checkbox-input" checked>
+            <div class="checkbox-custom">
+                <i class="ph ph-check"></i>
+            </div>
+            <span class="checkbox-label">Option 1</span>
+        </label>
+
+        <label class="checkbox-item">
+            <input type="checkbox" class="checkbox-input">
+            <div class="checkbox-custom">
+                <i class="ph ph-check"></i>
+            </div>
+            <span class="checkbox-label">Option 2</span>
+        </label> -->
+
         <!-- DROPDOWN -->
         <div class="dropdown-menu">
-            <button onclick="myFunction()" class="dropbtn"><p class="body-base">Dropdown <i class="ph ph-caret-down"></i></p></button>
+            <div onclick="myFunction()" class="dropbtn"><p class="body-base">Dropdown <i class="ph ph-caret-down"></i></p></div>
             <div id="myDropdown" class="dropdown-content">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
               <a href="#">Link 3</a>
             </div>
         </div>
+
+        <script type="module" src="../js/components/forms.js"></script>
+
     </body>
 </html>
