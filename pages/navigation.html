@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
 
         <script src="https://unpkg.com/htmlincludejs"></script>
-        <script src="../js/scripts.js"></script>
+        
     </head>
 
     <body>
@@ -38,20 +38,45 @@
             </div>
         </div>
 
-        <div class="sidebar">
-            <div class="sidebar-header">
-              <p class="subtitle-scale-2">Table of Contents</p>
+        <div class="grid-x">
+            <div class="cell small-3">
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                      <p class="subtitle-scale-2">Table of Contents</p>
+                    </div>
+                    <nav class="nav-menu">
+                        <div class="nav-item regular active" data-tab="nav1"><p class="body-scale-1 nav-text">Nav 1</p></div>
+
+                        <div class="nav-item regular nav-parent" data-tab="nav2">
+                            <div class="nav-text grid-x">
+                                <div class="cell medium-6 large-10">
+                                  <p class="body-scale-1">Nav 2</p>
+                                </div>
+                                <div class="cell medium-6 large-2">
+                                  <i class="ph ph-caret-down drop-down size24"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="nav-sub-menu">
+                            <div class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="body-base">Sub 1</p></div>
+                            <div class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="body-base">Sub 2</p></div>
+                        </div>
+
+                        <div class="nav-item regular" data-tab="nav3"><p class="body-scale-1 nav-text">Nav 3</p></div>
+                    </nav>
+                </div>
             </div>
-            <nav class="nav-menu">
-              <button class="nav-item regular active" data-tab="nav1"><p class="body-scale-1">Nav 1</p></button>
-                  <button class="nav-item regular" data-tab="nav2"><p class="body-scale-1">Nav 2 <i class="ph ph-caret-up icon24"></i></p></button>
-                    <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="body-scale-1">Report a Death</p></button>
-                    <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="body-scale-1">Report a Death</p></button>
-                  <button class="nav-item regular" data-tab="nav3"><p class="body-scale-1">Nav 3</p></button>
-              </nav>
+            <div class="cell small-9">
+                <span style="background-color: var(--light-gray);">
+                    <!-- <h1>content</h1> -->
+                </span>
+            </div>
         </div>
 
-        <script type="module" src="../js/components/cards.js"></script>
+
+        <script type="module" src="../js/components/navigation.js"></script>
+        <script src="../js/main.js"></script>
         
     </body>
 

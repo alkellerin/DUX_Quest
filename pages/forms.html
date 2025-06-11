@@ -69,13 +69,32 @@
         </label> -->
 
         <!-- DROPDOWN -->
-        <div class="dropdown-menu">
+        <!-- <div class="dropdown-menu">
             <div onclick="myFunction()" class="dropbtn"><p class="body-base">Dropdown <i class="ph ph-caret-down"></i></p></div>
             <div id="myDropdown" class="dropdown-content">
               <a href="#">Link 1</a>
               <a href="#">Link 2</a>
               <a href="#">Link 3</a>
             </div>
+        </div> -->
+
+        <div class="dropdown-container">
+            <label for="" class="faq-question grid-x">
+                <p class="body-scale-1">Drop Down:</p>
+                <div >
+                    <div class="cell medium-6 large-10">
+                      <p class="body-scale-2 bold">Question?</p>
+                    </div>
+                    <div class="cell medium-6 large-2">
+                      <i class="ph ph-caret-down drop-down size24"></i>
+                    </div>
+                  </div>
+            </label>
+            <select id="dropit" name="">
+                <option value=""><p class="body-base">Select an option</p></option>
+                <option value="1"><p class="body-base">Option 1</p></option>
+                <option value="2"><p class="body-base">Option 2</p></option>
+            </select>
         </div>
 
         <script type="module" src="../js/components/forms.js"></script>
