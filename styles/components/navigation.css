@@ -137,7 +137,7 @@
 
 /* SIDE NAV ----------------------------------------------------------------------- */
 .sidebar {
-    width: 470px;
+    width: 480px;
     min-height: 100vh;
     background-color: white;
     position: fixed;
@@ -153,12 +153,12 @@
 }
 
 .nav-text {
-    width: 302px;
+    width: 322px;
 }
 
 .nav-item {
     text-align: left;
-    width: 454px;
+    width: 464px;
     border-radius: 8px;
     padding: 16px;
     cursor: pointer;
@@ -166,6 +166,7 @@
     display: block;
     padding-left: 8.5rem;
     border-radius: 0px 8px 8px 0px;
+    margin-right: 16px;
 }
 
     .nav-item.active {

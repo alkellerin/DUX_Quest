@@ -120,7 +120,7 @@
 }
   
 .faq-question:hover {
-    background-color: #ecf0f1;
+    background-color: var(--lighter-gray);
 }
   
 .drop-down {
@@ -158,4 +158,21 @@
     color: black;
 }
   
-  
+/* TABLE ------------------------------------- */
+table {
+    margin: auto;
+    padding-top: 32px;
+    width: 1024px !important;
+}
+
+th {
+    padding: 16px !important;
+    background-color: var(--blue);
+    color: white;
+    text-align: left;
+}
+
+td {
+    padding: 16px !important;
+    align-items: left;
+}

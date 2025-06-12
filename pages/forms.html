@@ -78,8 +78,8 @@
             </div>
         </div> -->
 
-        <div class="dropdown-container">
-            <label for="" class="faq-question grid-x">
+        <!-- <div > -->
+            <!-- <label for="" class="faq-question grid-x">
                 <p class="body-scale-1">Drop Down:</p>
                 <div >
                     <div class="cell medium-6 large-10">
@@ -89,12 +89,28 @@
                       <i class="ph ph-caret-down drop-down size24"></i>
                     </div>
                   </div>
-            </label>
-            <select id="dropit" name="">
-                <option value=""><p class="body-base">Select an option</p></option>
-                <option value="1"><p class="body-base">Option 1</p></option>
-                <option value="2"><p class="body-base">Option 2</p></option>
-            </select>
+            </label> -->
+            <!-- <select id="dropit" name="" class="dropdown-container">
+                <option value="" class="dropdown-option"><p class="body-base">Select an option</p></option>
+                <option value="1" class="dropdown-option"><p class="body-base">Option 1</p></option>
+                <option value="2" class="dropdown-option"><p class="body-base">Option 2</p></option>
+            </select> -->
+        <!-- </div> -->
+
+        <div class="form-group">
+            <label class="form-label">Choose a Service Category</label>
+            <div class="dropdown-button" data-dropdown="services">
+                <p class="body-base selected-value">Select option</p>
+                <span class="drop-down-icon">
+                    <i class="ph ph-caret-down size24"></i>
+                </span>
+            </div>
+            <div class="dropdown-options" data-options="services">
+                <div class="dropdown-option" data-value="example1"><p class="body-base">Option 1</p></div>
+                <div class="dropdown-option" data-value="example2"><p class="body-base">Option 2</p></div>
+                <div class="dropdown-option" data-value="example3"><p class="body-base">Option 3</p></div>
+                <div class="dropdown-option" data-value="example4"><p class="body-base">Option 4</p></div>
+            </div>
         </div>
 
         <script type="module" src="../js/components/forms.js"></script>
