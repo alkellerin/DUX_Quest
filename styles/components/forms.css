@@ -1,7 +1,7 @@
 input[type=text]{
     border: 1px solid var(--light-gray);
     border-radius: 8px;
-    background-color: white;
+    background-color: var(--white);
     width: 624px;
 }
 
@@ -11,7 +11,7 @@ input[type=button]{
 }
 
 input[type=radio]{
-    color: var(--blue);
+    color: var(--blue50);
 }
 
 input::placeholder {
@@ -27,7 +27,7 @@ input::placeholder {
 .success-field{
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid var(--green);
+    border: 1px solid var(--green50);
     background-color: white;
     width: 624px;
 }
@@ -35,7 +35,7 @@ input::placeholder {
 .error-field{
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid var(--red);
+    border: 1px solid var(--red50);
     background-color: white;
     width: 624px;
 }

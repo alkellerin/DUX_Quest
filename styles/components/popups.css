@@ -15,8 +15,8 @@
 }
 
 .success-tab {
-    background-color: var(--lightest-green);
-    color: var(--darker-green);
+    background-color: var(--green80);
+    color: var(--green30);
     align-items: center;
     padding: 8px 16px;
     border-radius: 8px 8px 0px 0px;
@@ -29,8 +29,8 @@
 }
 
 .error-tab {
-    background-color: var(--lightest-red);
-    color: var(--darker-red);
+    background-color: var(--red70);
+    color: var(--red30);
     align-items: center;
     padding: 8px 16px;
     border-radius: 8px 8px 0px 0px;
