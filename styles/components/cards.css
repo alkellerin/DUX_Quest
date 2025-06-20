@@ -29,6 +29,16 @@
     padding: 4px 16px;
 }
 
+/* FOUNDATIONS CARD------------------------------------- */
+.card {
+    border-radius: 8px !important;
+}
+
+.card-divider {
+    background-color: var(--yellow50) !important;
+    color: var(--blue50) !important;
+}
+
 /* ------------------------------------- */
 .cardFaculty {
     width: 296px;
