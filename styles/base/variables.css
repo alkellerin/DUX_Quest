@@ -76,6 +76,19 @@ body {
     font-size: 24px;
 }
 
+.size28 {
+    font-size: 28px;
+}
+
+.size32 {
+    font-size: 32px;
+}
+
+.size36 {
+    font-size: 36px;
+}
+
+
 /* SIZING ------------------------------------------------------------------- */
 .drop-shadow-light {
     filter: drop-shadow(0 0 0.25rem var(--light-gray));

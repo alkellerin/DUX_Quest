@@ -1,6 +1,25 @@
+.subtitle {
+    color: var(--blue50);
+}
+
+.value-card {
+    border-radius: 8px;
+    border: 1px solid var(--lighter-gray);
+    border-radius: 8px;
+    background-color: white;
+    padding: 16px 8px;
+    width: 16rem;
+    height: 12rem;
+    margin: 8px;
+}
+
+.value-card:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
 .cardArticle {
     width: 296px;
-    border: 2px solid var(--lighter-gray);
+    border: 1px solid var(--lighter-gray);
     border-radius: 8px;
     background-color: white;
 }
