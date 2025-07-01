@@ -11,6 +11,7 @@
     width: 16rem;
     height: 12rem;
     margin: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .value-card:hover {
@@ -18,14 +19,17 @@
 }
 
 .cardArticle {
+    flex: 0 0 auto;
     width: 296px;
     border: 1px solid var(--lighter-gray);
     border-radius: 8px;
     background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cardArticle:hover {
-    /* filter: drop-shadow(4px 8px 10px #8C8C8C); */
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
 .thumbnail_cover {
@@ -205,3 +209,56 @@ td {
     padding: 16px !important;
     align-items: left;
 }
+
+
+/* CAROUSEL ------------------------------------- */
+.carousel-div {
+    position: relative;
+    padding: 0px 30px;
+    margin-top: 100px;
+}
+
+.left-carousel {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.right-carousel {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.scroll-cards {
+    position: relative;
+    width: 100%;
+    padding: 40px 0px;
+    height: auto;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+
