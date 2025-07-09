@@ -4,19 +4,13 @@
 
 .value-card {
     border-radius: 8px;
-    border: 1px solid var(--lighter-gray);
-    border-radius: 8px;
     background-color: white;
     padding: 16px 8px;
     width: 16rem;
     height: 12rem;
     margin: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.value-card:hover {
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
 
 .cardArticle {
     flex: 0 0 auto;
@@ -260,5 +254,3 @@ td {
     scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
 }
-
-
