@@ -6,8 +6,8 @@
 }
 
 .banner {
-    background-color: var(--blue50);
-    color: var(--white);
+    background-color: var(--bg-brand-blue);
+    color: var(--text-inverse);
     max-width: none;
     width: 100%;
 }
@@ -16,4 +16,22 @@
     margin: auto;
     padding-left: 8rem;
     max-width: 762px;
+}
+
+.primary-banner {
+    background-image: url("../../images/triangles_footer.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    width: 100%;
+}
+
+.primary-banner-content {
+    margin: auto;
+    padding-left: 8rem;
+    max-width: 762px;
+}
+
+.banner-primary-image {
+    width: 55%;
+    float: right;
 }

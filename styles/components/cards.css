@@ -1,24 +1,52 @@
-.subtitle {
-    color: var(--blue50);
+/* INFO CARD V1 ------------------------------------- */
+.info-card-small {
+    display: flex;
+    width: var(--Columns-6, 216px);
+    min-width: 171px;
+    max-width: 416px;
+    padding: var(--Space-M, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    background: var(--text-display);
 }
 
-.value-card {
-    border-radius: 8px;
-    background-color: white;
-    padding: 16px 8px;
-    width: 16rem;
-    height: 12rem;
-    margin: 8px;
+.info-card-large {
+    display: flex;
+    width: var(--Columns-4, 332px);
+    min-width: 171px;
+    max-width: 448px;
+    padding: var(--Space-M, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-surface-surface);
 }
 
 
+
+/* ARTICLE CARD ------------------------------------- */
 .cardArticle {
-    flex: 0 0 auto;
-    width: 296px;
-    border: 1px solid var(--lighter-gray);
-    border-radius: 8px;
-    background-color: white;
+    display: flex;
+    width: var(--Columns-6, 13.5rem);
+    min-width: 9.75rem;
+    max-width: 20.75rem;
+    min-height: 16rem;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-surface-surface);
+
 }
 
 .cardArticle:hover {
@@ -26,10 +54,14 @@
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
+.cardContent {
+    padding: 1rem;
+    gap: 0.25rem;
+}
+
 .thumbnail_cover {
-    background-color: var(--blue50);
+    background-color: var(--bg-brand-blue);
     border-radius: 8px 8px 0px 0px;
-    height: 158px;
     border: none;
 }
 
@@ -38,13 +70,79 @@
     width: 50%;
 }
 
-.cardInfo {
-   padding: 16px;
+
+
+/* VIDEO CARD ------------------------------------- */
+.cardVideo{
+    display: flex;
+    width: var(--Columns-6, 13.5rem);
+    min-width: 9.75rem;
+    max-width: 20.75rem;
+    min-height: 16rem;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-surface-surface);
+
 }
 
-.link-action {
-    padding: 4px 16px;
+.cardVideo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
+
+.cardContent {
+    padding: 1rem;
+    gap: 0.25rem;
+}
+
+.thumbnail_video {
+    height: 9rem;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+
+
+/* STAFF CARD ------------------------------------- */
+.staffCard{
+    display: flex;
+    width: var(--Columns-6, 13.5rem);
+    min-width: 9.75rem;
+    max-width: 20.75rem;
+    min-height: 16rem;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-surface-surface);
+
+}
+
+.staffCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.cardContent {
+    padding: 1rem;
+    gap: 0.25rem;
+}
+
+.thumbnail_picture {
+    height: 9rem;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+
 
 /* FOUNDATIONS CARD------------------------------------- */
 .card {
@@ -56,60 +154,22 @@
     color: var(--blue50) !important;
 }
 
-/* ------------------------------------- */
-.cardFaculty {
-    width: 296px;
-    border: 2px solid var(--lighter-gray);
-    border-radius: 8px;
-    background-color: white;
-}
-.thumbnail_img2 {
-    background-color: var(--blue50);
-    border-radius: 8px 8px 0px 0px;
-    height: 296px;
-    border: none;
-}
 
-.roleLabel {
-    padding: 16px 16px 0px 16px;
-}
 
-/* ------------------------------------- */
+/* MAIN INDEX CARDS------------------------------------- */
 .choices {
     display: flex;
-    gap: 24px;
-}
-
-.employer-card-icon {
-    font-size: 48px;
-}
-
-.member-card-icon {
-    font-size: 48px;
-}
-
-.membersCard {
-    width: 18.5rem;
-    height: 19rem;
-    border: 2px solid var(--light-gray);
-    border-radius: 8px;
-    color: var(--blue50);
-    background-color: var(--yellow50);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.membersCard:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    gap: 16px;
 }
 
 .employersCard {
-    width: 18.5rem;
+    width: 20.75rem;
     height: 19rem;
-    border: 2px solid var(--light-gray);
+    padding: 16px;
     border-radius: 8px;
-    color: white;
-    background-color: #398434;
+    color: var(--text-brand-blue);
+    background: var(--bg-brand-yellow);
+    position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -118,13 +178,40 @@
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
+.membersCard {
+    width: 20.75rem;
+    height: 19rem;
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--text-brand-blue);
+    background: var(--bg-surface-surface);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membersCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.readMore {
+    position: absolute;
+    bottom: 0;
+}
+
+.cardInfo {
+    gap: 4px;
+}
+
+
+
 /* FAQ ------------------------------------- */
 .faq-menu {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 16px;
     border-bottom: var(--light-gray);
     padding: 20px 20px 0 20px;
-    max-width: 1544px;
+    max-width: 680px;
 }
 
 .faq-item {
@@ -133,22 +220,26 @@
 }
   
 .faq-question {
-    background-color: white;
+    background-color: var(--bg-subtle);
     width: 100%;
-    padding: 20px;
+    padding: 8px 16px;
     text-align: left;
-    font-size: 18px;
     border: none;
     border-radius: 8px;
     outline: none;
     cursor: pointer;
     position: relative;
+    margin: auto;
     transition: background-color 0.3s ease;
 }
   
-.faq-question:hover {
-    background-color: var(--lighter-gray);
-}
+    .faq-question:hover {
+        background-color: var(--bg-gray-gray-subtler-hover);
+    }
+
+    .faq-question:active {
+        background-color: var(--bg-gray-gray-subtler-active);
+    }
   
 .drop-down {
     position: absolute;
@@ -158,50 +249,60 @@
   
 .active {
     .drop-down {
-      color: var(--white);
+      color: var(--icon-display);
       transform: translateX(-50%) rotate(180deg);
     }
   
     .faq-answer {
       display: block;
-      padding: 20px;
+      padding: 16px;
     }
 }
 
 .faq-question.active {
-    background-color: var(--blue50);
-    color: white;
+    background-color: var(--bg-brand-blue);
+    color: var(--text-inverse);
 }
+
+    .faq-question.active:hover {
+        background-color: var(--bg-brand-blue-hover);
+    }
+
+    .faq-question.active:hover {
+        background-color: var(--bg-brand-blue-active);
+    }
   
 .faq-answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    background-color: white;
+    background-color: var(--bg-subtle);
 }
   
 .faq-answer p {
     padding: 20px;
-    color: black;
+    color: var(--text-bold);
 }
   
 /* TABLE ------------------------------------- */
 table {
     margin: auto;
     padding-top: 32px;
-    width: 1024px !important;
+    width: 680px !important;
+    border-radius: 16px;
 }
 
 th {
     padding: 16px !important;
-    background-color: var(--blue50);
-    color: white;
+    background-color: var(--bg-brand-blue);
+    color: var(--text-inverse);
     text-align: left;
 }
 
 td {
     padding: 16px !important;
     align-items: left;
+    background-color: var(--bg-subtle);
 }
 
 
@@ -251,6 +352,6 @@ td {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 
-    scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: none; 
+  -ms-overflow-style: none; 
 }

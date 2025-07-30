@@ -16,196 +16,176 @@
     </head>
 
     <body>
-      <div class="value-card">
-        <span style="color:var(--yellow50)"><i class="ph-duotone ph-binoculars size32"></i></span>
-        <p class="subtitle demi">Vision</p>
-        <p class="body-base">Engaged members able to realize their retirement dreams.</p>
-      </div>
-
-      <div class="value-card">
-        <span style="color:var(--yellow50)"><i class="ph-duotone ph-rocket-launch size32"></i></span>
-        <p class="subtitle demi">Mission</p>
-        <p class="body-base">As fiduciaries, educate stakeholders, collect necessary contributions, and prudently manage member assets to deliver promised DB and DC benefits and services.</p>
-      </div>
-
-      <div class="value-card">
-        <span style="color:var(--yellow50)"><i class="ph-duotone ph-hand-heart size32"></i></span>
-        <p class="subtitle demi">Values</p>
-        <p class="body-base">People are the foundation of our success. It takes people with different backgrounds, ideas, and strengths to be successful.</p>
-      </div>
-
-      <div class="cover">
-        <button class="left" onclick="leftScroll()">
-          <i class="fas fa-angle-double-left"></i>
-        </button>
-        <div class="scroll-images">
-
-        <div class="cardArticle">
-            <div class="thumbnail_cover">
-              <img src="../images/INem-crop.png" class="thumbnail_img" alt="" />
-            </div>
-  
-            <div class="cardInfo">
-                <p class="labeltag">CATEGORY NAME</p>
-                <p class="subtitle demi">Article Title Here</p>
-            </div>
-            <div class="readMore">
-                <p class="link-action">Read More <i class="ph ph-caret-double-right"></i></p>
-            </div>
-        </div>
-
-        <div class="cardFaculty">
-            <div class="thumbnail_img2"></div>
-    
-            <div class="roleLabel">
-              <p class="labeltag">UX DESIGNER</p>
-            </div>
-    
-            <div class="cardInfo">
-                <p class="subtitle demi">Lexi Keller</p>
-                <p class="body-base">Description Description La la la la lalaa woohoo style guide yay</p>
-            </div>
-        </div> 
-
-        <div class="card" style="width: 300px;">
-          <div class="card-divider">
-            <p class="body-scale-1 bold">Header</p>
+      <!-- MAIN INDEX CARDS ---------------------------------------------------------- -->
+      <div class="choices">
+        <div class="employersCard">
+          <div class="cardInfo">
+            <i class="ph ph-user employer-card-icon size32"></i>
+            <p class="headingL">Employers</p>
+            <p class="bodyL">
+                INPRS participating employers resource guides.
+            </p>
           </div>
-          <img src="assets/img/generic/rectangle-1.jpg">
-          <div class="card-section">
-            <h4>This is a card.</h4>
-            <p>It has an easy to override visual style, and is appropriately subdued.</p>
+          <div class="readMore">
+            <span style="color:var(--text-inverse);"><p class="linkL">Go to employer <i class="ph ph-caret-double-right size16"></i></p></span>
           </div>
         </div>
-
-        <div class="choices">
-            <div class="membersCard">
-    
-              <div class="cardInfo">
-                <i class="ph ph-briefcase member-card-icon"></i>
-                <p class="subtitle bold">Members</p>
-                <p>
-                  Get up to date information on your INPRS plan.
-                </p>
-              </div>
-              <div class="readMore">
-                  <p class="link-action">Go to plan info <i class="ph ph-caret-double-right"></i></p>
-              </div>
-            </div>
-    
-            <div class="employersCard">
-      
-              <div class="cardInfo">
-                <i class="ph ph-user employer-card-icon"></i>
-                <p class="subtitle bold">Employers</p>
-                <p>
-                  INPRS participating employers resource guides.
-                </p>
-              </div>
-              <div class="readMore">
-                <span style="color:var(--white)"><p class="link-action">Go to employer <i class="ph ph-caret-double-right"></i></p></span>
-              </div>
-            </div>
+        
+        <div class="membersCard">
+          <div class="cardInfo">
+            <i class="ph ph-briefcase member-card-icon size32"></i>
+            <p class="headingL">Members</p>
+            <p class="bodyL">
+                Get up to date information for:
+            </p>
+            <ul>
+                <li>INPRS working members</li>
+                <li>Retirees</li>
+                <li>Survivors</li>
+                <li>Beneficiaries</li>
+            </ul>
+          </div>
+          <div class="readMore">
+              <p class="linkL">Go to plan info <i class="ph ph-caret-double-right size16"></i></p>
+          </div>
         </div>
+    </div>
 
-        <div class="faq-container row">
-          <p class="subtitle-scale-2">Frequently Asked Questions</p>
+    <!-- INFO CARD SMALL ---------------------------------------------------------- -->
+    <div class="info-card-small">
+      <p class="headingS">Card Title</p>
+      <p class="bodyS">Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor.</p>
+      <!-- placeholder content/buttons go here -->
+    </div>
 
-          <div class="faq-menu">
-            <div class="faq-item">
-              <div class="faq-question grid-x">
-                <div class="cell medium-6 large-10">
-                  <p class="body-scale-2 bold">Question?</p>
-                </div>
-                <div class="cell medium-6 large-2">
-                  <i class="ph ph-caret-down drop-down size24"></i>
-                </div>
+    <!-- INFO CARD LARGE ---------------------------------------------------------- -->
+    <div class="info-card-large">
+      <p class="headingL">Card Title</p>
+      <p class="bodyL">Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor.</p>
+      <!-- placeholder content/buttons go here -->
+    </div>
+
+    <!-- ARTICLE CARD ---------------------------------------------------------- -->
+    <div class="cardArticle">
+      <div class="thumbnail_cover">
+        <img src="../images/INem-crop.png" class="thumbnail_img" alt="" />
+      </div>
+
+      <div class="cardContent">
+          <p class="labelS">CATEGORY NAME</p>
+          <p class="headingS">Article Title Here</p>
+      </div>
+      <div class="readMore">
+          <span style="padding-left: 1rem"><p class="linkS">Read More <i class="ph ph-caret-double-right"></i></p></span>
+      </div>
+    </div>
+
+    <!-- VIDEO CARD ---------------------------------------------------------- -->
+    <div class="cardVideo">
+      <div class="thumbnail_cover">
+        <img src="../images/video-placeholder.jpg" class="thumbnail_video" alt="" />
+      </div>
+
+      <div class="cardContent">
+          <p class="labelS">CATEGORY NAME</p>
+          <p class="headingS">Video Title Here</p>
+      </div>
+    </div>
+
+    <!-- STAFF CARD ---------------------------------------------------------- -->
+    <div class="staffCard">
+      <div class="thumbnail_cover">
+        <img src="../images/image-placeholder.png" class="thumbnail_picture" alt="" />
+      </div>
+
+      <div class="cardContent">
+          <p class="labelS">Title</p>
+          <p class="headingS">Name</p>
+          <p class="bodyS">Description</p>
+      </div>
+    </div>
+
+    <!-- FAQ ---------------------------------------------------------- -->
+      <div class="faq-container row">
+        <p class="headingM">Frequently Asked Questions</p>
+
+        <div class="faq-menu">
+
+          <div class="faq-item">
+            <div class="faq-question grid-x">
+              <div class="cell medium-6 large-10">
+                <p class="labelM">Question?</p>
               </div>
-
-              <div class="faq-answer">
-                <p class="body-base">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
+              <div class="cell medium-6 large-2">
+                <i class="ph ph-caret-down drop-down size24"></i>
               </div>
             </div>
 
-            <div class="faq-item">
-              <div class="faq-question grid-x">
-                <div class="cell medium-6 large-10">
-                  <p class="body-scale-2 bold">Question?</p>
-                </div>
-                <div class="cell medium-6 large-2">
-                  <i class="ph ph-caret-down drop-down size24"></i>
-                </div>
-              </div>
+            <div class="faq-answer">
+              <p class="bodyM">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+            </div>
+          </div>
 
-              <div class="faq-answer">
-                <p class="body-base">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
+          <div class="faq-item">
+            <div class="faq-question grid-x">
+              <div class="cell medium-6 large-10">
+                <p class="labelM">Question?</p>
+              </div>
+              <div class="cell medium-6 large-2">
+                <i class="ph ph-caret-down drop-down size24"></i>
               </div>
             </div>
 
-            <div class="faq-item">
-              <div class="faq-question grid-x">
-                <div class="cell medium-6 large-10">
-                  <p class="body-scale-2 bold">Question?</p>
-                </div>
-                <div class="cell medium-6 large-2">
-                  <i class="ph ph-caret-down drop-down size24"></i>
-                </div>
-              </div>
-
-              <div class="faq-answer">
-                <p class="body-base">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
-              </div>
+            <div class="faq-answer">
+              <p class="bodyM">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
             </div>
           </div>
 
         </div>
 
-      
-        <table>
-          <tr>
-              <th><p class="body-scale-1">Table Name</p></th>
-              <th><p class="body-scale-1">Table Description</p></th>
-          </tr>
-          <tr>
-              <td><p class="body-base">
-                Table category
-              </p></td>
-              <td><p class="body-base">
-                This is about a table. This is a description about the table that 
-                is listed here
-              </p></td>
-          </tr>
-          <tr>
-            <td><p class="body-base">
+      </div>
+
+      <!-- TABLE ---------------------------------------------------------- -->
+      <table>
+        <tr>
+            <th><p class="labelM">Table Name</p></th>
+            <th><p class="labelM">Table Description</p></th>
+        </tr>
+        <tr>
+            <td><p class="bodyM bold">
               Table category
             </p></td>
-            <td><p class="body-base">
+            <td><p class="bodyM">
               This is about a table. This is a description about the table that 
               is listed here
             </p></td>
         </tr>
         <tr>
-          <td><p class="body-base">
+          <td><p class="bodyM bold">
             Table category
           </p></td>
-          <td><p class="body-base">
+          <td><p class="bodyM">
             This is about a table. This is a description about the table that 
             is listed here
           </p></td>
-      </tr>
-        </table>
+        </tr>
+        <tr>
+          <td><p class="bodyM bold">
+            Table category
+          </p></td>
+          <td><p class="bodyM">
+            This is about a table. This is a description about the table that 
+            is listed here
+          </p></td>
+        </tr>
+      </table>
 
         <script type="module" src="../js/components/cards.js"></script>
 

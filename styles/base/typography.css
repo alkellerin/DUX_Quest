@@ -1,101 +1,7 @@
-/* BODY AND BODY TITLES -------------------------------------------------------- */
-.extra-small {
-    font-family: "greycliff-cf", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 10px;
-    margin: 0px;
+
+p {
+    margin-bottom: 0 !important;
 }
-
-.link {
-    font-family: "greycliff-cf", sans-serif;
-    font-style: normal;
-    font-size: 14px;
-    margin: 0px;
-}
-
-.labeltag {
-    font-family: "greycliff-cf", sans-serif;
-    font-style: normal;
-    font-size: 14px;
-    margin: 0px;
-    color: var(--light-gray);
-}
-
-.link-action {
-    font-family: "greycliff-cf", sans-serif;
-    font-style: italic;
-    font-size: 14px;
-    margin: 0px;
-}
-
-.body-base, .button-text {
-    font-family: "greycliff-cf", sans-serif;
-    font-style: normal;
-    font-size: 14px;
-    margin: 0px;
-}
-
-.body-scale-1 {
-    font-family: "greycliff-cf", sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    margin: 0px;
-}
-
-.body-scale-2 {
-    font-family: "greycliff-cf", sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    margin: 0px;
-}
-
-
-/* TITLES -------------------------------------------------------- */
-.subtitle {
-    font-family: "greycliff-cf", sans-serif;
-    font-style: normal;
-    font-size: 24px;
-    margin: 0px;
-}
-
-.subtitle-scale-1 {
-    font-family: "greycliff-cf", sans-serif;
-    font-style: normal;
-    font-size: 28px;
-    margin: 0px;
-}
-
-.subtitle-scale-2 {
-    font-family: "greycliff-cf", sans-serif;
-    font-style: normal;
-    font-size: 32px;
-    margin: 0px;
-}
-
-
-/* DISPLAY -------------------------------------------------------- */
-.heading-3 {
-    font-family: "greycliff-cf", sans-serif;
-    font-style: normal;
-    font-size: 40px;
-    margin: 0px;
-}
-
-.heading-2 {
-    font-family: "greycliff-cf", sans-serif;
-    font-style: normal;
-    font-size: 48px;
-    margin: 0px;
-}
-
-.heading-1 {
-    font-family: "greycliff-cf", sans-serif;
-    font-style: normal;
-    font-size: 56px;
-    margin: 0px;
-}
-
 
 /* FONT WEIGHTS --------------------------------------------------------*/
 .regular {
@@ -112,4 +18,118 @@
 
 .bold {
     font-weight: 700;
+}
+
+/* HEADINGS --------------------------------------------------------*/
+:root {
+    --font-family: "Greycliff CF", sans-serif;
+}
+
+.headingXXXL {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.headingXXL {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.headingXL {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.headingL {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.headingM {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.headingS {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* BODY --------------------------------------------------------*/
+.bodyL {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.bodyM {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.bodyS {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.bodyXS {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/* LINK --------------------------------------------------------*/
+.linkL {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.linkM {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.linkS {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+/* LABEL --------------------------------------------------------*/
+.labelM {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.labelS {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.labelXS {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* INPUT --------------------------------------------------------*/
+.inputM {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
 }
