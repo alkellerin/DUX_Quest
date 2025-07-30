@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="../styles/styles.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
 
         <script src="https://unpkg.com/htmlincludejs"></script>
-        
     </head>
 
     <body>
@@ -26,6 +26,8 @@
                 <p class="body-scale-1 medium">Media</p>
                 <p class="body-scale-1 medium">About INPRS</p>
                 <p class="body-scale-1 medium">Contact Us</p>
+            
+
                 
                 <div class="header-actions">
                     <div class="search-container">
@@ -33,67 +35,25 @@
                         <i class="ph ph-magnifying-glass size20 search-icon" id="searchIcon"></i>
                         <i class="ph ph-x size20 close-icon" id="closeIcon"></i>
                     </div>
-                    <a class="button-secondary-med" href="">Log into your account</a>
+                    <button class="login-btn">Log into your account</button>
                 </div>
             </div>
         </div>
 
-        <div class="grid-x">
-            <div class="cell small-12 test">hi</div>
-        </div>
-
-        <div class="grid-x">
-            <div class="cell small-6 test">hi</div>
-            <div class="cell small-6 test">hi</div>
-        </div>
-
-        <div class="grid-x">
-            <div class="cell small-4 test">hi</div>
-            <div class="cell small-4 test">hi</div>
-            <div class="cell small-4 test">hi</div>
-        </div>
-
-
-        <div class="grid-x">
-            <div class="cell small-3">
-                <div class="sidebar">
-                    <div class="sidebar-header">
-                      <p class="subtitle-scale-2">Table of Contents</p>
-                    </div>
-                    <nav class="nav-menu">
-                        <div class="nav-item regular active" data-tab="nav1"><p class="body-scale-1 nav-text">Nav 1</p></div>
-
-                        <div class="nav-item regular nav-parent" data-tab="nav2">
-                            <div class="nav-text grid-x">
-                                <div class="cell medium-6 large-10">
-                                  <p class="body-scale-1">Nav 2</p>
-                                </div>
-                                <div class="cell medium-6 large-2">
-                                  <i class="ph ph-caret-down drop-down size24"></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="nav-sub-menu">
-                            <div class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="body-base">Sub 1</p></div>
-                            <div class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="body-base">Sub 2</p></div>
-                        </div>
-
-                        <div class="nav-item regular" data-tab="nav3"><p class="body-scale-1 nav-text">Nav 3</p></div>
-                    </nav>
-                </div>
+        <div class="sidebar">
+            <div class="sidebar-header">
+              <p class="subtitle-scale-2">Table of Contents</p>
             </div>
-            <div class="cell small-9">
-                <span style="background-color: var(--light-gray);">
-                    <h1>content</h1>
-                </span>
-            </div>
+            <nav class="nav-menu">
+                <button class="nav-item regular active" data-tab="nav1"><p class="body-scale-1">Nav 1</p></button>
+                  <button class="nav-item regular" data-tab="nav2"><p class="body-scale-1">Nav 2 <i class="ph ph-caret-up icon24"></i></p></button>
+                    <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="body-scale-1">Report a Death</p></button>
+                    <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="body-scale-1">Report a Death</p></button>
+                <button class="nav-item regular" data-tab="nav3"><p class="body-scale-1">Nav 3</p></button>
+            </nav>
         </div>
 
+        <script src="../js/navmenus.js" async defer></script>
 
-        <script type="module" src="../js/components/navigation.js"></script>
-        <script src="../js/main.js"></script>
-        
     </body>
-
 </html>

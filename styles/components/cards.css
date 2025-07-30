@@ -205,6 +205,33 @@
 
 
 
+/* FILE CARD ------------------------------------- */
+.fileCard {
+    display: flex;
+    width: var(--Columns-6, 13.5rem);
+    min-width: 9.75rem;
+    max-width: 20.75rem;
+    padding: var(--Space-XS, 0.5rem);
+    align-items: center;
+    align-content: center;
+    gap: 0.5rem var(--Space-XS, 0.5rem);
+    flex-wrap: wrap;
+
+    border-radius: .5rem;
+    background-color: var(--bg-brand-blue);
+    color: var(--text-display);
+}
+
+    .fileCard:hover {
+        background-color: var(--bg-brand-blue-hover);
+    }
+
+    .fileCard:active {
+        background-color: var(--bg-brand-blue-active);
+    }
+
+
+
 /* FAQ ------------------------------------- */
 .faq-menu {
     background-color: white;
@@ -284,6 +311,9 @@
     color: var(--text-bold);
 }
   
+
+
+
 /* TABLE ------------------------------------- */
 table {
     margin: auto;
@@ -304,6 +334,7 @@ td {
     align-items: left;
     background-color: var(--bg-subtle);
 }
+
 
 
 /* CAROUSEL ------------------------------------- */

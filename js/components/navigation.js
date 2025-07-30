@@ -1,4 +1,4 @@
-// TOP NAV ---------------------------------------------------------------------
+// TOP NAV --------------------------------------------------------------------- 
 const searchIcon = document.getElementById('searchIcon');
 const closeIcon = document.getElementById('closeIcon');
 const searchInput = document.getElementById('searchInput');
