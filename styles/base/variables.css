@@ -21,7 +21,7 @@ body {
 	--light-background-1200: #2a3bc8;
 	--light-background-1300: #2634ac;
 	--light-background-1400: #1c2674;
-
+	
 	--light-gray-100: #fff;
 	--light-gray-200: #f2f2f2;
 	--light-gray-300: #e5e5e5;
@@ -128,6 +128,7 @@ body {
 	--light-brand-blue-1400: #010204;
 
 	--bg-brand-yellow-subtlest: var(--light-brand-yellow-200);
+	--bg-subtle: var(--light-background-100);
 	--bg-info-hover: var(--light-blue-800);
 	--bg-warning: var(--light-yellow-700);
 	--bg-gray-gray-bold-active: var(--light-gray-1400);
@@ -177,6 +178,7 @@ body {
 	--border-link-hover: var(--light-blue-800);
     --border-link-inactive: var(--light-blue-200);
 
+	--text-link: var(--light-blue-700);
 	--text-link-active: var(--light-blue-900);
 	--text-link-hover: var(--light-blue-800);
 	--text-link-inactive: var(--light-blue-200);

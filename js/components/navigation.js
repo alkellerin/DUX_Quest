@@ -3,7 +3,7 @@ const searchIcon = document.getElementById('searchIcon');
 const closeIcon = document.getElementById('closeIcon');
 const searchInput = document.getElementById('searchInput');
 const navMenu = document.getElementById('navMenu');
-const header = document.getElementById('header');
+// const header = document.getElementById('header');
 
 function toggleSearch() {
     const isActive = searchInput.classList.contains('active');
@@ -52,136 +52,230 @@ searchInput.addEventListener('keydown', function(event) {
     }
 });
 
-// SIDE NAV --- This changes the content on the page depending on the tab
+
+
+
+
+
+
+// SIDE NAV ---------------------------------------------------------------------
+// var navItems = document.querySelectorAll('.nav-item');
+// var contentSections = document.querySelectorAll('.content-section');
+
+// function showContent(tabId) {
+//     // Hide all content sections
+//     contentSections.forEach(function(section) {
+//         section.classList.add('hidden');
+//     });
+
+//     // Show selected content section
+//     var targetSection = document.getElementById(tabId);
+//     if (targetSection) {
+//         targetSection.classList.remove('hidden');
+//     }
+
+//     // Update active states - remove from all
+//     navItems.forEach(function(item) {
+//         item.classList.remove('active');
+//     });
+
+//     // Add active class to clicked item
+//     var activeItem = document.querySelector('[data-tab="' + tabId + '"]');
+//     if (activeItem) {
+//         activeItem.classList.add('active');
+//     }
+// }
+
+// function toggleDropdown(parentTab) {
+//     // Find all sub items related to this parent
+//     var subItems = document.querySelectorAll('.nav-item.sub[data-parent="' + parentTab + '"]');
+//     var dropdownIcon = document.querySelector('[data-tab="' + parentTab + '"] .dropdown-arrow');
+    
+//     // Check if dropdown is currently expanded
+//     var isExpanded = false;
+//     subItems.forEach(function(item) {
+//         if (item.classList.contains('show')) {
+//             isExpanded = true;
+//         }
+//     });
+
+//     // Toggle sub items visibility
+//     subItems.forEach(function(item) {
+//         if (isExpanded) {
+//             item.classList.remove('show');
+//         } else {
+//             item.classList.add('show');
+//         }
+//     });
+
+//     // Toggle dropdown icon
+//     if (dropdownIcon) {
+//         if (isExpanded) {
+//             dropdownIcon.classList.remove('expanded');
+//         } else {
+//             dropdownIcon.classList.add('expanded');
+//         }
+//     }
+// }
+
+// function toggleDropdown(parentTab) {
+//     // Get the parent button
+//     var parentButton = document.querySelector('[data-tab="' + parentTab + '"]');
+    
+//     // Get the .sub-menu element immediately after the parent
+//     var submenu = parentButton.nextElementSibling;
+  
+//     // Check current visibility
+//     var isExpanded = submenu.classList.contains('show');
+  
+//     // Toggle submenu
+//     if (isExpanded) {
+//       submenu.classList.remove('show');
+//     } else {
+//       submenu.classList.add('show');
+//     }
+  
+//     // Toggle dropdown icon
+//     var dropdownIcon = parentButton.querySelector('.drop-down-sub');
+//     if (dropdownIcon) {
+//       if (isExpanded) {
+//         dropdownIcon.classList.remove('expanded');
+//       } else {
+//         dropdownIcon.classList.add('expanded');
+//       }
+//     }
+//   }
+
+// function toggleDropdown(parentTab) {
+//     var parentButton = document.querySelector('[data-tab="' + parentTab + '"]');
+//     var submenu = parentButton.nextElementSibling;
+  
+//     if (!submenu || !submenu.classList.contains('sub-menu')) return;
+  
+//     submenu.classList.toggle('show');
+  
+//     var dropdownIcon = parentButton.querySelector('.drop-down-sub');
+//     if (dropdownIcon) {
+//       dropdownIcon.classList.toggle('expanded');
+//     }
+//   }
+  
+  
+
+// // Add click event listeners to navigation items
+// navItems.forEach(function(item) {
+//     item.addEventListener('click', function() {
+//         var tabId = this.getAttribute('data-tab');
+//         var hasDropdown = this.getAttribute('data-has-dropdown');
+
+//         if (hasDropdown) {
+//             // Toggle the dropdown
+//             toggleDropdown(tabId);
+//             // Also show the main content for this section
+//             showContent(tabId);
+//         } else {
+//             // Regular navigation
+//             showContent(tabId);
+//         }
+//     });
+// });
+
+// // Initialize with first tab active
+// showContent('nav1');
+
+
+
+
 var navItems = document.querySelectorAll('.nav-item');
 var contentSections = document.querySelectorAll('.content-section');
+var allSubmenus = document.querySelectorAll('.sub-menu');
+
+// function showContent(tabId) {
+//   contentSections.forEach(function(section) {
+//     section.classList.add('hidden');
+//   });
+
+//   var targetSection = document.getElementById(tabId);
+//   if (targetSection) {
+//     targetSection.classList.remove('hidden');
+//   }
+
+//   navItems.forEach(function(item) {
+//     item.classList.remove('active');
+//   });
+
+//   var activeItem = document.querySelector('[data-tab="' + tabId + '"]');
+//   if (activeItem) {
+//     activeItem.classList.add('active');
+//   }
+// }
 
 function showContent(tabId) {
-    // Hide all content sections
-    contentSections.forEach(function(section) {
-        section.classList.add('hidden');
-    });
-
-    // Show selected content section
-    var targetSection = document.getElementById(tabId);
-    if (targetSection) {
-        targetSection.classList.remove('hidden');
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => section.classList.add('hidden'));
+  
+    const target = document.getElementById(tabId);
+    if (target) {
+      target.classList.remove('hidden');
     }
+  }
 
-    // Update active states - remove from all
-    navItems.forEach(function(item) {
-        item.classList.remove('active');
-    });
-
-    // Add active class to clicked item
-    var activeItem = document.querySelector('[data-tab="' + tabId + '"]');
-    if (activeItem) {
-        activeItem.classList.add('active');
-    }
-}
-
-// SUB NAV MENU 
 function toggleDropdown(parentTab) {
-    // Find all sub items related to this parent
-    var subItems = document.querySelectorAll('.nav-item.sub[data-parent="' + parentTab + '"]');
-    var dropdownIcon = document.querySelector('[data-tab="' + parentTab + '"] .dropdown-arrow');
-    
-    // Check if dropdown is currently expanded
-    var isExpanded = false;
-    subItems.forEach(function(item) {
-        if (item.classList.contains('show')) {
-            isExpanded = true;
-        }
-    });
+  var parentButton = document.querySelector('[data-tab="' + parentTab + '"]');
+  var submenu = parentButton.nextElementSibling;
+  var dropdownIcon = parentButton.querySelector('.drop-down-sub');
 
-    // Toggle sub items visibility
-    subItems.forEach(function(item) {
-        if (isExpanded) {
-            item.classList.remove('show');
-        } else {
-            item.classList.add('show');
-        }
-    });
+  if (!submenu || !submenu.classList.contains('sub-menu')) return;
 
-    // Toggle dropdown icon
-    if (dropdownIcon) {
-        if (isExpanded) {
-            dropdownIcon.classList.remove('expanded');
-        } else {
-            dropdownIcon.classList.add('expanded');
-        }
+  // Close all other submenus
+  allSubmenus.forEach(function(otherMenu) {
+    if (otherMenu !== submenu) {
+      otherMenu.classList.remove('show');
     }
+  });
+
+  // Toggle current submenu
+  submenu.classList.toggle('show');
+
+  // Toggle the dropdown icon
+  if (dropdownIcon) {
+    dropdownIcon.classList.toggle('expanded');
+  }
+
+  // Reset all other dropdown icons
+  document.querySelectorAll('.drop-down-sub').forEach(function(icon) {
+    if (icon !== dropdownIcon) {
+      icon.classList.remove('expanded');
+    }
+  });
 }
 
-// Add click event listeners to navigation items
 navItems.forEach(function(item) {
-    item.addEventListener('click', function() {
-        var tabId = this.getAttribute('data-tab');
-        var hasDropdown = this.getAttribute('data-has-dropdown');
-
-        if (hasDropdown) {
-            // Toggle the dropdown
-            toggleDropdown(tabId);
-            // Also show the main content for this section
-            showContent(tabId);
-            
-        } else {
-            // Regular navigation
-            showContent(tabId);
+    item.addEventListener('click', function(event) {
+      var tabId = this.getAttribute('data-tab');
+      var hasDropdown = this.getAttribute('data-has-dropdown');
+      var isSubItem = this.classList.contains('sub');
+  
+      if (hasDropdown) {
+        toggleDropdown(tabId);
+      } else {
+        // Only hide submenus if this isn't a sub-item
+        if (!isSubItem) {
+          allSubmenus.forEach(function(submenu) {
+            submenu.classList.remove('show');
+          });
+  
+          document.querySelectorAll('.drop-down-sub').forEach(function(icon) {
+            icon.classList.remove('expanded');
+          });
         }
+      }
+  
+      showContent(tabId);
     });
-});
+  });
+  
 
-// Initialize with first tab active
+// Initial load
 showContent('nav1');
 
-
-
-// SUB NAV - Open and close ------------------------------------------------
-const navParents = document.querySelectorAll('.nav-parent');
-const allNavItems = document.querySelectorAll('.nav-item');
-
-// Function to close all submenus
-function closeAllSubmenus() {
-    document.querySelectorAll('.nav-sub-menu').forEach(menu => {
-        menu.classList.remove('show');
-    });
-    
-    document.querySelectorAll('.nav-parent .ph-caret-up').forEach(icon => {
-        icon.classList.remove('ph-caret-up');
-        icon.classList.add('ph-caret-down');
-    });
-}
-
-// Handle nav-parent clicks (toggle submenu)
-navParents.forEach(parent => {
-    parent.addEventListener('click', function(e) {
-        e.stopPropagation();
-        
-        const subMenu = this.nextElementSibling;
-        const isCurrentlyOpen = subMenu.classList.contains('show');
-        
-        // Close all submenus first
-        closeAllSubmenus();
-        
-        // If this submenu wasn't open, open it
-        if (!isCurrentlyOpen) {
-            subMenu.classList.add('show');
-            
-            const caretIcon = this.querySelector('.ph-caret-down');
-            if (caretIcon) {
-                // caretIcon.classList.remove('ph-caret-down');
-                // caretIcon.classList.add('ph-caret-up');
-            }
-        }
-    });
-});
-
-// Handle all nav-item clicks (close submenus for non-parent items)
-allNavItems.forEach(item => {
-    if (!item.classList.contains('nav-parent')) {
-        item.addEventListener('click', function() {
-            closeAllSubmenus();
-        });
-    }
-});
