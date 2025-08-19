@@ -1,0 +1,71 @@
+.badgeLarge {
+    align-items: center;
+    display: inline flex;
+    gap: 4px;
+    border-radius: 100px;
+    padding: 8px 16px;
+    min-width: 50px;
+}
+
+.badgeSmall {
+    align-items: center;
+    display: inline flex;
+    gap: 2px;
+    border-radius: 100px;
+    padding: 4px 8px;
+    min-width: 50px;
+}
+
+.badgeProgressLarge {
+    align-items: center;
+    display: inline flex;
+    gap: 2px;
+    border-radius: 100px;
+    padding: 4px 8px;
+    min-width: 50px;
+}
+
+.badgeProgressSmall {
+    align-items: center;
+    display: inline flex;
+    gap: 4px;
+    border-radius: 100px;
+    padding: 4px 8px;
+    min-width: 50px;
+}
+
+.badgeRegular {
+    color: var(--text-brand-blue);
+    background-color: var(--bg-brand-blue-subtlest);
+    min-width: 100px;
+}
+
+.badgeGray {
+    color: var(--text-bold);
+    background-color: var(--bg-gray-gray-subtler);
+}
+
+.badgeBold {
+    color: var(--text-inverse);
+    background-color: var(--bg-surface-surface-bold);
+}
+
+.badgeGreen {
+    color: var(--text-success);
+    background-color: var(--bg-success-subtlest);
+}
+
+.badgeYellow {
+    color: var(--text-warning);
+    background-color: var(--bg-warning-subtlest);
+}
+
+.badgeRed {
+    color: var(--text-danger);
+    background-color: var(--bg-danger-subtlest);
+}
+
+.badgeBlue {
+    color: var(--text-link);
+    background-color: var(--bg-info-subtlest);
+}

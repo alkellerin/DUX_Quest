@@ -129,6 +129,7 @@ body {
 
 	--bg-brand-yellow-subtlest: var(--light-brand-yellow-200);
 	--bg-subtle: var(--light-background-100);
+	--bg-subtle-blue: var(--light-background-200);
 	--bg-info-hover: var(--light-blue-800);
 	--bg-warning: var(--light-yellow-700);
 	--bg-gray-gray-bold-active: var(--light-gray-1400);
